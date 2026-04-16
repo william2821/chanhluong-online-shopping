@@ -6,7 +6,7 @@ expect.extend(matchers);
 const config: PlaywrightTestConfig = {
   use: {
     // Browser options
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true,
 
     // Context options
@@ -49,6 +49,6 @@ const config: PlaywrightTestConfig = {
 
   fullyParallel: true,
 
-  forbidOnly: false,
+  forbidOnly: true,
 };
 export default config;
