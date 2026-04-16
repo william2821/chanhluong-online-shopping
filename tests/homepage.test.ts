@@ -20,7 +20,7 @@ test.describe('Verify the online shopping functions and features', () => {
     const title = await homePage.getPageTitle();
     expect(title).toEqual(
       'A place to practice your automation testing skills!'
-    );
+    ); // correct title is without 'testing'; this is for generate a failure case to the report!
   });
 
   test('Verify currency dropdown elements and hover behaviour', async ({}) => {
