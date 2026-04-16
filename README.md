@@ -16,6 +16,9 @@ to generate and open allure report:
 - from console, run "npm run generate-report"
 - run "npm run open-report"
 
+to open allure report form GHA:
+- from Playwright Tests - Upload Allure results, click the link of "Artifact download URL:...." could download the report
+
 ### Note:
 
 First test is checking the homepage title, which could be used for a quick smoke
