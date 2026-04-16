@@ -1,0 +1,36 @@
+{
+  "name": "onlineshopping",
+  "version": "1.0.0",
+  "description": "This is for test Engineer assessment",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test -c ./playwright.config.ts",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "npm run lint && npm run prettier",
+    "generate-report": "allure generate allure-results --clean -o allure-report",
+    "open-report": "allure open ./allure-report",
+    "allure:all": "allure serve ./allure-results"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "allure-commandline": "^2.38.1",
+    "allure-playwright": "^3.7.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.6.1",
+    "eslint": "^9.28.0",
+    "eslint-plugin-playwright": "^2.2.0",
+    "expect-playwright": "^0.8.0",
+    "prettier": "^3.5.3",
+    "prettier-plugin-jsdoc": "^1.3.2",
+    "typescript": "^5.8.3"
+  }
+}
