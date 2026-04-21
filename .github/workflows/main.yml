@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       # Install Playwright browsers
-      - name: Install Playwright Browsers
+      - name: Install Playwright chromium
         run: npx playwright install --with-deps
 
       # Lint
